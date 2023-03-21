@@ -46,7 +46,7 @@ class QuantumMeasurementInsertion(MutationOperator):
     def append_new_func(self, node):
 
         function = ast.FunctionDef(
-            name='__qmutpy_qmi_func__',
+            name='_qmutpy_qmi_func_',
             args=ast.arguments(
                 args=[
                     ast.arg( arg='circ', annotation=None),
@@ -130,7 +130,7 @@ class QuantumMeasurementInsertion(MutationOperator):
     def equivalent_gates(self, discard_named_args=True):
         existing_gate_names = ['ch', 'cp', 'cx', 'cy', 'cz', 'crx', 'cry', 'crz', 'ccx', 'cswap',
                                 'csx', 'cu', 'cu1', 'cu3', 'dcx', 'h', 'i', 'id', 'iden', 'iswap',
-                                'ms', 'p', 'r', 'rx', 'rxx', 'ry', 'ryy', 'rz', 'rzx', 'rzz', 's',
+                                'ms', 'p', 'r', 'rx', 'rxx', 'ry', 'ryy', 'rzx', 'rzz', 's',
                                 'sdg', 'swap', 'sx', 'x', 'y', 'z', 't', 'tdg', 'u', 'u1', 'u2',
                                 'u3']
         gate_functions = [o for o in getmembers(QuantumCircuit) if isfunction(o[1]) and o[0] in existing_gate_names]
