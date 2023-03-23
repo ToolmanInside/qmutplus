@@ -7,10 +7,13 @@ import controller
 import views
 
 TARGET = [
-    '/Users/think/qmutplus/adder_test.py',
-    '/Users/think/qmutplus/bv_test.py',
+    '/Users/think/qmutplus/adder_04.py',
+    '/Users/think/qmutplus/bv_04.py',
     ]
-UNITTEST = ['/Users/think/qmutplus/t01.py']
+UNITTEST = [
+    '/Users/think/qmutplus/test_adder_04.py',
+    '/Users/think/qmutplus/test_bv_04.py',
+    ]
 
 # output views
 QUIET = False
