@@ -1,7 +1,7 @@
 from qiskit import QuantumCircuit, execute, Aer, QuantumRegister, ClassicalRegister
-num_qubits = 4
+num_qubits = 6
 
-def bv_04(mqc):
+def bv_06(mqc):
     q = QuantumRegister(num_qubits)
     c = ClassicalRegister(num_qubits)
     qc = QuantumCircuit(q, c)
@@ -13,15 +13,21 @@ def bv_04(mqc):
     qc.h(0)
     qc.h(1)
     qc.h(2)
-    qc.x(3)
     qc.h(3)
-    qc.cx(0,3)
-    qc.cx(1,3)
-    qc.cx(2,3)
+    qc.h(4)
+    qc.x(5)
+    qc.h(5)
+    qc.cx(0,5)
+    qc.cx(1,5)
+    qc.cx(2,5)
+    qc.cx(3,5)
+    qc.cx(4,5)
     qc.h(0)
     qc.h(1)
     qc.h(2)
     qc.h(3)
+    qc.h(4)
+    qc.h(5)
 
     for i in range(num_qubits):
         qc.measure(i, i)
