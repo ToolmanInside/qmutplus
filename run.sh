@@ -22,5 +22,31 @@
 # python bin/mut.py --target bv_07 --unit-test test_bv_07_random.py --operator QGR QGD QMD
 # python bin/mut.py --target bv_07 --unit-test test_bv_07_qft.py --operator QGR QGD QMD
 # python bin/mut.py --target bv_07 --unit-test test_bv_07_ucnot.py --operator QGR QGD QMD
-
-
+# python bin/mut.py --target grover_03 --unit-test test_grover_03_none.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_03 --unit-test test_grover_03_random.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_03 --unit-test test_grover_03_qft.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_03 --unit-test test_grover_03_ucnot.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_05 --unit-test test_grover_05_none.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_05 --unit-test test_grover_05_random.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_05 --unit-test test_grover_05_qft.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_05 --unit-test test_grover_05_ucnot.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_07 --unit-test test_grover_07_none.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_07 --unit-test test_grover_07_random.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_07 --unit-test test_grover_07_qft.py --operator QGR QGD QMD
+# python bin/mut.py --target grover_07 --unit-test test_grover_07_ucnot.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_04 --unit-test test_pe_04_none.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_04 --unit-test test_pe_04_random.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_04 --unit-test test_pe_04_qft.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_04 --unit-test test_pe_04_ucnot.py --operator QGR QGD QM
+# python bin/mut.py --target pe_05 --unit-test test_pe_05_none.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_05 --unit-test test_pe_05_random.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_05 --unit-test test_pe_05_qft.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_05 --unit-test test_pe_05_ucnot.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_06 --unit-test test_pe_06_none.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_06 --unit-test test_pe_06_random.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_06 --unit-test test_pe_06_qft.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_06 --unit-test test_pe_06_ucnot.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_07 --unit-test test_pe_07_none.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_07 --unit-test test_pe_07_random.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_07 --unit-test test_pe_07_qft.py --operator QGR QGD QMD
+# python bin/mut.py --target pe_07 --unit-test test_pe_07_ucnot.py --operator QGR QGD QMD
