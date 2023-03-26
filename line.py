@@ -387,8 +387,8 @@ class Circuit(object):
                 self.lines[i].add_empty_gate()
 
     def initial_seeds(self, num_qubits, num_cbits):
-        q = QuantumRegister(num_qubits)
-        c = ClassicalRegister(num_cbits)
+        q = QuantumRegister(num_qubits, 'q')
+        c = ClassicalRegister(num_cbits, 'c')
         qc = QuantumCircuit(q, c)
         # After some rotations on initial qubits
         return qc
