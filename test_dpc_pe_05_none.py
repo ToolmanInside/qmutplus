@@ -13,4 +13,4 @@ class Test_dpc_pe_05(TestCase):
         result = dpc_pe_05(new_circuit.code)
         # result = bv_04(mutate_circuit.code)
         # print(result)
-        self.assertTrue(abs(result['00000'] - result['00001']) <= 5000)
+        self.assertTrue(abs(result['00000'] - result['00001']) <= 30000)

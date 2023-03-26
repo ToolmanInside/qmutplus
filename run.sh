@@ -21,7 +21,7 @@
 # python bin/mut.py --target bv_07 --unit-test test_bv_07_none.py --operator QGR QGD QMD
 # python bin/mut.py --target bv_07 --unit-test test_bv_07_random.py --operator QGR QGD QMD
 # python bin/mut.py --target bv_07 --unit-test test_bv_07_qft.py --operator QGR QGD QMD
-# python bin/mut.py --target bv_07 --unit-test test_bv_07_ucnot.py --operator QGR QGD QMD
+python bin/mut.py --target bv_07 --unit-test test_bv_07_ucnot.py --operator QGR QGD QMD
 # python bin/mut.py --target grover_03 --unit-test test_grover_03_none.py --operator QGR QGD QMD
 # python bin/mut.py --target grover_03 --unit-test test_grover_03_random.py --operator QGR QGD QMD
 # python bin/mut.py --target grover_03 --unit-test test_grover_03_qft.py --operator QGR QGD QMD

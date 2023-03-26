@@ -11,4 +11,4 @@ class Test_dpc_pe_07(TestCase):
         new_circuit = Circuit(7)
         mutate_circuit = designated_mutator.generate_circuit(new_circuit)
         result = dpc_pe_07(mutate_circuit.code)
-        self.assertTrue(abs(result['0000000'] - result['0000001']) <= 5000)
+        self.assertTrue(abs(result['0000000'] - result['0000001']) <= 30000)

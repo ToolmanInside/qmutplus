@@ -372,10 +372,11 @@ class MutationTestRunnerThread(MutationTestRunner, Thread):
 
 
 def get_mutation_test_runner_class():
-    if os.name == 'nt':
-        return MutationTestRunnerThread
-    else:
-        return MutationTestRunnerProcess
+    # if os.name == 'nt':
+    #     return MutationTestRunnerThread
+    # else:
+    #     return MutationTestRunnerProcess
+    return MutationTestRunnerThread
 
 
 class ParentNodeTransformer(ast.NodeTransformer):

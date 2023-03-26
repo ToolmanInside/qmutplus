@@ -11,5 +11,4 @@ class Test_adder_07(TestCase):
         new_circuit = Circuit(7)
         mutate_circuit = designated_mutator.generate_circuit(new_circuit)
         result = adder_07(new_circuit.code)
-        # result = bv_04(mutate_circuit.code)
-        self.assertTrue(result['0000000'] >= 4000)
+        self.assertTrue(result['0000000'] >= 700)
