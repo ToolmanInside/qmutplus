@@ -376,7 +376,7 @@ def get_mutation_test_runner_class():
     #     return MutationTestRunnerThread
     # else:
     #     return MutationTestRunnerProcess
-    return MutationTestRunnerThread
+    return MutationTestRunnerProcess
 
 
 class ParentNodeTransformer(ast.NodeTransformer):
