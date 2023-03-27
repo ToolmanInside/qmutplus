@@ -1,8 +1,8 @@
 from qiskit import QuantumCircuit, execute, Aer, QuantumRegister, ClassicalRegister
 from numpy import pi
-num_qubits = 4
+num_qubits = 5
 
-def dpc_qft_04(mqc):
+def dpc_qft_05(mqc):
     q = QuantumRegister(num_qubits, 'q')
     c = ClassicalRegister(num_qubits, 'c')
     qc = QuantumCircuit(q, c)
@@ -17,15 +17,21 @@ def dpc_qft_04(mqc):
     qc.p(pi/2,1).c_if(c,1)
     qc.p(pi/4,2).c_if(c,1)
     qc.p(pi/8,3).c_if(c,1)
+    qc.p(pi/16,4).c_if(c,1)
     qc.h(1)
     qc.measure(1,1)
     qc.p(pi/2,2).c_if(c,1)
     qc.p(pi/4,3).c_if(c,1)
+    qc.p(pi/8,4).c_if(c,1)
     qc.h(2)
     qc.measure(2,2)
     qc.p(pi/2,3).c_if(c,1)
+    qc.p(pi/4,4).c_if(c,1)
     qc.h(3)
     qc.measure(3,3)
+    qc.p(pi/2,4).c_if(c,1)
+    qc.h(4)
+    qc.measure(4,4)
 
     backend = Aer.get_backend("aer_simulator")
     job = execute(qc, backend, shots = 100000).result().get_counts(qc)
