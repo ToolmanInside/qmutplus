@@ -27,5 +27,5 @@ def qft_04(mqc):
         qc.measure(i, i)
 
     backend = Aer.get_backend("aer_simulator")
-    job = execute(qc, backend, shots = 100000).result().get_counts(qc)
+    job = execute(qc, backend, shots = 10000).result().get_counts(qc)
     return job
