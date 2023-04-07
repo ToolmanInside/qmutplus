@@ -1,0 +1,691 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 60.3448275862069
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: &id001 !!python/module:adder_04 ''
+  mutations:
+  - lineno: 10
+    operator: QGD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.017744064331054688
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 54, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[6],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_06)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGD
+  number: 2
+  status: killed
+  tests_run: 7
+  time: 0.16465258598327637
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 34, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[2],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_02)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGD
+  number: 3
+  status: killed
+  tests_run: 3
+  time: 0.07126283645629883
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGD
+  number: 4
+  status: survived
+  tests_run: 10
+  time: 0.23583698272705078
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 44, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[4],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_04)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGD
+  number: 5
+  status: killed
+  tests_run: 5
+  time: 0.1212315559387207
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.024417400360107422
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.02451777458190918
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.025828123092651367
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.024308443069458008
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.026994943618774414
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 11
+  status: killed
+  tests_run: 1
+  time: 0.026754379272460938
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 12
+  status: killed
+  tests_run: 1
+  time: 0.027196407318115234
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 13
+  status: killed
+  tests_run: 1
+  time: 0.026955127716064453
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.02509617805480957
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: QGR
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.026772499084472656
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 54, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[6],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_06)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 16
+  status: killed
+  tests_run: 7
+  time: 0.16409802436828613
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 54, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[6],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_06)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 17
+  status: killed
+  tests_run: 7
+  time: 0.18644237518310547
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 54, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[6],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_06)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 18
+  status: killed
+  tests_run: 7
+  time: 0.18154287338256836
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 54, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[6],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_06)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 19
+  status: killed
+  tests_run: 7
+  time: 0.16445183753967285
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 20
+  status: survived
+  tests_run: 10
+  time: 0.23447132110595703
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 54, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[6],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_06)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 21
+  status: killed
+  tests_run: 7
+  time: 0.16323590278625488
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 22
+  status: survived
+  tests_run: 10
+  time: 0.24353289604187012
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 23
+  status: survived
+  tests_run: 10
+  time: 0.27309203147888184
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 24
+  status: survived
+  tests_run: 10
+  time: 0.2634704113006592
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 54, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[6],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_06)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: QGR
+  number: 25
+  status: killed
+  tests_run: 7
+  time: 0.16621160507202148
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 26
+  status: survived
+  tests_run: 10
+  time: 0.25988268852233887
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 27
+  status: survived
+  tests_run: 10
+  time: 0.23715782165527344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 28
+  status: incompetent
+  tests_run: 0
+  time: 0.006928682327270508
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 29
+  status: survived
+  tests_run: 10
+  time: 0.23619413375854492
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 34, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[2],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_02)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 30
+  status: killed
+  tests_run: 3
+  time: 0.0706031322479248
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 34, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[2],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_02)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 31
+  status: killed
+  tests_run: 3
+  time: 0.07185029983520508
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 32
+  status: survived
+  tests_run: 10
+  time: 0.24613046646118164
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 34, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[2],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_02)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 33
+  status: killed
+  tests_run: 3
+  time: 0.07311439514160156
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 34
+  status: killed
+  tests_run: 1
+  time: 0.024180889129638672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 35
+  status: survived
+  tests_run: 10
+  time: 0.24622893333435059
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 36
+  status: killed
+  tests_run: 1
+  time: 0.02750849723815918
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 34, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[2],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_02)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: QGR
+  number: 37
+  status: killed
+  tests_run: 3
+  time: 0.07338571548461914
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 38
+  status: survived
+  tests_run: 10
+  time: 0.23490118980407715
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 39
+  status: survived
+  tests_run: 10
+  time: 0.2344522476196289
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 40
+  status: survived
+  tests_run: 10
+  time: 0.24788355827331543
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 41
+  status: survived
+  tests_run: 10
+  time: 0.23900079727172852
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 42
+  status: survived
+  tests_run: 10
+  time: 0.2353971004486084
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 43
+  status: survived
+  tests_run: 10
+  time: 0.2339622974395752
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 44
+  status: survived
+  tests_run: 10
+  time: 0.23648858070373535
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 45
+  status: survived
+  tests_run: 10
+  time: 0.3067307472229004
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 46
+  status: survived
+  tests_run: 10
+  time: 0.24645042419433594
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: QGR
+  number: 47
+  status: survived
+  tests_run: 10
+  time: 0.23538923263549805
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 48
+  status: survived
+  tests_run: 10
+  time: 0.2624814510345459
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 49
+  status: survived
+  tests_run: 10
+  time: 0.23786354064941406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 50
+  status: incompetent
+  tests_run: 0
+  time: 0.007253170013427734
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 51
+  status: survived
+  tests_run: 10
+  time: 0.2339005470275879
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 44, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[4],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_04)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 52
+  status: killed
+  tests_run: 5
+  time: 0.11803936958312988
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 39, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[3],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_03)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 53
+  status: killed
+  tests_run: 4
+  time: 0.09613323211669922
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 44, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[4],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_04)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 54
+  status: killed
+  tests_run: 5
+  time: 0.11885881423950195
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 44, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[4],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_04)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 55
+  status: killed
+  tests_run: 5
+  time: 0.12038660049438477
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 56
+  status: killed
+  tests_run: 1
+  time: 0.02475595474243164
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 44, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[4],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_04)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 57
+  status: killed
+  tests_run: 5
+  time: 0.12308216094970703
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 24, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[0],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 58
+  status: killed
+  tests_run: 1
+  time: 0.027655839920043945
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 44, in test_adder_04_0000_prob_0_percent_00\n    self.assertTrue(JSDivergence(dist_list[4],\
+    \ result, 10000) < 0.3)\nAssertionError: False is not true\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_04)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: QGR
+  number: 59
+  status: killed
+  tests_run: 5
+  time: 0.11923336982727051
+- exception_traceback: "Traceback (most recent call last):\n  File \"/home/ye/qmutplus/test_adder_04_qft.py\"\
+    , line 23, in test_adder_04_0000_prob_0_percent_00\n    result = adder_04(test_case_list[0])\n\
+    \  File \"adder_04\", line 20, in adder_04\n  File \"/home/ye/miniconda/envs/py37/lib/python3.7/site-packages/qiskit/result/result.py\"\
+    , line 289, in get_counts\n    raise QiskitError(f'No counts for experiment \"\
+    {repr(key)}\"')\nqiskit.exceptions.QiskitError: 'No counts for experiment \"<qiskit.circuit.quantumcircuit.QuantumCircuit\
+    \ object at 0x7fc398188790>\"'\n"
+  killer: test_adder_04_0000_prob_0_percent_00 (test_adder_04_qft.Test_case_00)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: QMD
+  number: 60
+  status: killed
+  tests_run: 1
+  time: 0.016782760620117188
+number_of_tests: 10
+targets:
+- adder_04
+tests:
+- name: test_adder_04_qft
+  target: null
+  time: 0.2397599220275879
+time_stats:
+  create_mutant_module: 0.00554966926574707
+  create_target_ast: 0.0005083084106445312
+  mutate_module: 13.618233442306519
+  run_tests_with_mutant: 8.465201616287231
+total_time: 14.437125444412231

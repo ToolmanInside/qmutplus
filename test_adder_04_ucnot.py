@@ -18,57 +18,52 @@ for idx in range(10):
     dist = adder_04(quantum_circuit)
     dist_list.append(dist)
 
-class Test_case_10(TestCase):
+class Test_case_00(TestCase):
     def test_adder_04_0000_prob_0_percent_00(self):
         result = adder_04(test_case_list[0])
         self.assertTrue(JSDivergence(dist_list[0], result, 10000) < 0.3)
 
-# class Test_case_00(TestCase):
-#     def test_adder_04_0000_prob_0_percent_00(self):
-#         result = adder_04(test_case_list[0])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_01(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[1])
+        self.assertTrue(JSDivergence(dist_list[1], result, 10000) < 0.3)
 
-# class Test_case_01(TestCase):
-#     def test_adder_04_0000_prob_0_percent_01(self):
-#         result = adder_04(test_case_list[1])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_02(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[2])
+        self.assertTrue(JSDivergence(dist_list[2], result, 10000) < 0.3)
 
-# class Test_case_02(TestCase):
-#     def test_adder_04_0000_prob_0_percent_02(self):
-#         result = adder_04(test_case_list[2])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_03(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[3])
+        self.assertTrue(JSDivergence(dist_list[3], result, 10000) < 0.3)
 
-# class Test_case_03(TestCase):
-#     def test_adder_04_0000_prob_0_percent_03(self):
-#         result = adder_04(test_case_list[3])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_04(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[4])
+        self.assertTrue(JSDivergence(dist_list[4], result, 10000) < 0.3)
 
-# class Test_case_04(TestCase):
-#     def test_adder_04_0000_prob_0_percent_04(self):
-#         result = adder_04(test_case_list[4])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_05(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[5])
+        self.assertTrue(JSDivergence(dist_list[5], result, 10000) < 0.3)
 
-# class Test_case_05(TestCase):
-#     def test_adder_04_0000_prob_0_percent_05(self):
-#         result = adder_04(test_case_list[5])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_06(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[6])
+        self.assertTrue(JSDivergence(dist_list[6], result, 10000) < 0.3)
 
-# class Test_case_06(TestCase):
-#     def test_adder_04_0000_prob_0_percent_06(self):
-#         result = adder_04(test_case_list[6])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_07(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[7])
+        self.assertTrue(JSDivergence(dist_list[7], result, 10000) < 0.3)
 
-# class Test_case_07(TestCase):
-#     def test_adder_04_0000_prob_0_percent_07(self):
-#         result = adder_04(test_case_list[7])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_08(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[8])
+        self.assertTrue(JSDivergence(dist_list[8], result, 10000) < 0.3)
 
-# class Test_case_08(TestCase):
-#     def test_adder_04_0000_prob_0_percent_08(self):
-#         result = adder_04(test_case_list[8])
-#         self.assertTrue(result['0000'] >= 10)
-
-# class Test_case_09(TestCase):
-#     def test_adder_04_0000_prob_0_percent_09(self):
-#         result = adder_04(test_case_list[9])
-#         self.assertTrue(result['0000'] >= 10)
+class Test_case_09(TestCase):
+    def test_adder_04_0000_prob_0_percent_00(self):
+        result = adder_04(test_case_list[9])
+        self.assertTrue(JSDivergence(dist_list[9], result, 10000) < 0.3)
