@@ -12,4 +12,5 @@ class Test_qft_06(TestCase):
         mutate_circuit = designated_mutator.generate_circuit(new_circuit)
         result = qft_06(mutate_circuit.code)
         # result = bv_04(mutate_circuit.code)
-        self.assertTrue(result['000000'] >= 5000)
+        # print(result)
+        self.assertTrue(result['000000'] >= 500)

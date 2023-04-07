@@ -5,10 +5,12 @@ from line import Circuit
 from adder_04 import adder_04
 
 designated_mutator = QFTMutator()
+num_qubits = 4
 
 class Test_adder_04(TestCase):
     def test_adder_04_0000_prob_0_percent(self):
-        new_circuit = Circuit(4)
+        input_folder = "inputs_" + str(num_qubits).zfill(2)
+        new_circuit = Circuit(num_qubits)
         mutate_circuit = designated_mutator.generate_circuit(new_circuit)
         result = adder_04(new_circuit.code)
         # result = bv_04(mutate_circuit.code)

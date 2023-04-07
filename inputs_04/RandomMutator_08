@@ -1,0 +1,10 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+qreg q24[4];
+creg c24[4];
+ch q24[2],q24[1];
+crz(10) q24[2],q24[1];
+p(2) q24[3];
+tdg q24[2];
+cz q24[3],q24[0];
+

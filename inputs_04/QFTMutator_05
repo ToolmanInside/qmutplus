@@ -1,0 +1,12 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+gate qft_dg q0,q1,q2,q3 { swap q1,q2; swap q0,q3; h q0; cp(-pi/2) q1,q0; h q1; cp(-pi/4) q2,q0; cp(-pi/2) q2,q1; h q2; cp(-pi/8) q3,q0; cp(-pi/4) q3,q1; cp(-pi/2) q3,q2; h q3; }
+gate qft q0,q1,q2,q3 { qft_dg q0,q1,q2,q3; }
+qreg q17[4];
+creg c17[4];
+u(-0.30972294,0,-3.1088749) q17[0];
+u(1.2554445,0,0) q17[1];
+u(-0.77020367,5.6758822,0) q17[2];
+u(-1.9514836,7.8958224,-4.934889) q17[3];
+qft q17[0],q17[1],q17[2],q17[3];
+

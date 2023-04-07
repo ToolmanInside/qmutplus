@@ -283,7 +283,7 @@ if __name__ == "__main__":
     circuit = Circuit(4)
     mutator = QFTMutator()
     new_circuit = mutator.generate_circuit(circuit)
-    print(new_circuit.code)
+    print(new_circuit.code.qasm())
     result = new_circuit.run_vec()
     print(result[0].real)
     print(result[0].imag)

@@ -1,0 +1,15 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+gate qft_dg q0,q1,q2,q3,q4,q5,q6 { swap q2,q4; swap q1,q5; swap q0,q6; h q0; cp(-pi/2) q1,q0; h q1; cp(-pi/4) q2,q0; cp(-pi/2) q2,q1; h q2; cp(-pi/8) q3,q0; cp(-pi/4) q3,q1; cp(-pi/2) q3,q2; h q3; cp(-pi/16) q4,q0; cp(-pi/8) q4,q1; cp(-pi/4) q4,q2; cp(-pi/2) q4,q3; h q4; cp(-pi/32) q5,q0; cp(-pi/16) q5,q1; cp(-pi/8) q5,q2; cp(-pi/4) q5,q3; cp(-pi/2) q5,q4; h q5; cp(-pi/64) q6,q0; cp(-pi/32) q6,q1; cp(-pi/16) q6,q2; cp(-pi/8) q6,q3; cp(-pi/4) q6,q4; cp(-pi/2) q6,q5; h q6; }
+gate qft q0,q1,q2,q3,q4,q5,q6 { qft_dg q0,q1,q2,q3,q4,q5,q6; }
+qreg q104[7];
+creg c104[7];
+u(0.080646778,0,0) q104[0];
+u(-1.2390222,9.7991465,0) q104[1];
+u(-0.58360375,6.6059471,0) q104[2];
+u(-0.4160807,0,-4.1287169) q104[3];
+u(-11.690859,0,-19.634954) q104[4];
+u(-1.9610042,7.8958224,-4.934889) q104[5];
+u(-2.1578626,6.6059471,-6.1244666) q104[6];
+qft q104[0],q104[1],q104[2],q104[3],q104[4],q104[5],q104[6];
+
