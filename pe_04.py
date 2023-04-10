@@ -7,7 +7,7 @@ def pe_04(mqc):
     c = ClassicalRegister(num_qubits)
     qc = QuantumCircuit(q, c)
 
-    for i in range(num_qubits):
+    for i in range(num_qubits-1):
         qc.h(i)
 
     qc = mqc.compose(qc)

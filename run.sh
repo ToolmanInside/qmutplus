@@ -64,7 +64,7 @@
 
 # python bin/mut.py --target rand_cliff_04 --unit-test test_rand_cliff_04_random.py --operator QGR QGD QMD
 # python bin/mut.py --target rand_cliff_04 --unit-test test_rand_cliff_04_qft.py --operator QGR QGD QMD
-python bin/mut.py --target rand_cliff_04 --unit-test test_rand_cliff_04_ucnot.py --operator QGR QGD QMD
+# python bin/mut.py --target rand_cliff_04 --unit-test test_rand_cliff_04_ucnot.py --operator QGR QGD QMD
 
 # python bin/mut.py --target rand_cliff_05 --unit-test test_rand_cliff_05_random.py --operator QGR QGD QMD
 # python bin/mut.py --target rand_cliff_05 --unit-test test_rand_cliff_05_qft.py --operator QGR QGD QMD
@@ -95,7 +95,7 @@ python bin/mut.py --target rand_cliff_04 --unit-test test_rand_cliff_04_ucnot.py
 # python bin/mut.py --target dpc_qft_05 --unit-test test_dpc_qft_05_ucnot.py --operator QGR QGD QMD
 
 # python bin/mut.py --target dpc_qft_06 --unit-test test_dpc_qft_06_random.py --operator QGR QGD QMD
-# python bin/mut.py --target dpc_qft_06 --unit-test test_dpc_qft_06_qft.py --operator QGR QGD QMD
+python bin/mut.py --target dpc_qft_06 --unit-test test_dpc_qft_06_qft.py --operator QGR QGD QMD
 # python bin/mut.py --target dpc_qft_06 --unit-test test_dpc_qft_06_ucnot.py --operator QGR QGD QMD
 
 # python bin/mut.py --target dpc_qft_07 --unit-test test_dpc_qft_07_random.py --operator QGR QGD QMD

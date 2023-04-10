@@ -10,7 +10,7 @@ def dpc_pe_04(mqc):
     for i in range(num_qubits):
         qc.h(i)
 
-    qc = mqc.compose(qc)
+    qc = qc.compose(mqc)
 
     qc.h(0)
     qc.h(1)
@@ -29,5 +29,5 @@ def dpc_pe_04(mqc):
     qc.measure(2,0)
 
     backend = Aer.get_backend("aer_simulator")
-    job = execute(qc, backend, shots = 100000).result().get_counts(qc)
+    job = execute(qc, backend, shots = 10000).result().get_counts(qc)
     return job

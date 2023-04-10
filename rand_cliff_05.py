@@ -6,8 +6,8 @@ def rand_cliff_05(mqc):
     c = ClassicalRegister(num_qubits)
     qc = QuantumCircuit(q, c)
 
-    for i in range(num_qubits):
-        qc.h(i)
+    # for i in range(num_qubits):
+    #     qc.h(i)
 
     qc = mqc.compose(qc)
 

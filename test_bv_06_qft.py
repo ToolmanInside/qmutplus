@@ -9,7 +9,7 @@ from util import JSDivergence
 
 program = bv_06
 designated_mutator = QFTMutator()
-sample_times = 100000
+sample_times = 120000
 num_qubits = 6
 input_folder = "inputs_" + str(num_qubits).zfill(2)
 test_case_list = list()

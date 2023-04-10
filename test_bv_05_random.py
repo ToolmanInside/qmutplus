@@ -9,7 +9,7 @@ from util import JSDivergence
 
 program = bv_05
 designated_mutator = RandomMutator()
-sample_times = 10000
+sample_times = 12000
 num_qubits = 5
 input_folder = "inputs_" + str(num_qubits).zfill(2)
 test_case_list = list()

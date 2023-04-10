@@ -10,7 +10,7 @@ def dpc_qft_07(mqc):
     for i in range(num_qubits):
         qc.h(i)
 
-    qc = mqc.compose(qc)
+    qc = qc.compose(mqc)
 
     qc.h(0)
     qc.measure(0,0)
