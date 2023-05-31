@@ -95,9 +95,9 @@
 # python bin/mut.py --target dpc_qft_05 --unit-test test_dpc_qft_05_ucnot.py --operator QGR QGD QMD
 
 # python bin/mut.py --target dpc_qft_06 --unit-test test_dpc_qft_06_random.py --operator QGR QGD QMD
-python bin/mut.py --target dpc_qft_06 --unit-test test_dpc_qft_06_qft.py --operator QGR QGD QMD
+# python bin/mut.py --target dpc_qft_06 --unit-test test_dpc_qft_06_qft.py --operator QGR QGD QMD
 # python bin/mut.py --target dpc_qft_06 --unit-test test_dpc_qft_06_ucnot.py --operator QGR QGD QMD
 
-# python bin/mut.py --target dpc_qft_07 --unit-test test_dpc_qft_07_random.py --operator QGR QGD QMD
+python bin/mut.py --target dpc_qft_07 --unit-test test_dpc_qft_07_random.py --operator QGR QGD QMD
 # python bin/mut.py --target dpc_qft_07 --unit-test test_dpc_qft_07_qft.py --operator QGR QGD QMD
 # python bin/mut.py --target dpc_qft_07 --unit-test test_dpc_qft_07_ucnot.py --operator QGR QGD QMD
