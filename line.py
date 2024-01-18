@@ -13,6 +13,17 @@ from copy import deepcopy
 import random
 
 def gen_bin_dict(num_qubits):
+    """
+    Generate a dictionary with binary string keys representing all possible states for a given number of qubits.
+
+    Each key is a binary representation of a quantum state, and all values are initialized to 0.0, signifying the initial state probability.
+
+    Parameters:
+    num_qubits (int): The number of qubits for which the state combinations are to be generated.
+
+    Returns:
+    dict: A dictionary where the keys are binary strings of length `num_qubits` and the values are floats, all initialized to 0.0.
+    """
     # get binary dict object here
     output_list = list()
     output_list.append("0" * num_qubits)
