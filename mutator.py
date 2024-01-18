@@ -302,6 +302,17 @@ class UCNOTMutator2(object):
         return u_idx_list, uucnot_idx_list
 
     def generate_circuit(self, old_circuit):
+        """
+        Generate a new quantum circuit by adding U gates and controlled NOT (CNOT) gates with adjusted parameters.
+
+        This method operates similarly to UCNOTMutator's generate_circuit, but it uses different calibration values for the U gates. Each U gate's angles are scaled down, resulting in more finely tuned rotations.
+
+        Args:
+            old_circuit (Circuit): The existing circuit to be modified.
+
+        Returns:
+            new_circuit (Circuit): The updated quantum circuit with new U and CNOT gates.
+        """
         new_circuit = deepcopy(old_circuit)
         num_qubits = new_circuit.num_qubits
         u_idx_list, uucnot_idx_list = self.generate_u_gate_list(num_qubits)
