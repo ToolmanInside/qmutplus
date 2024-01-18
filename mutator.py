@@ -98,6 +98,18 @@ class RandomMutator(object):
         self.num_gates = 10
 
     def generate_circuit(self, circuit):
+        """
+        Randomly adds quantum gates to the provided circuit until a predefined condition is met.
+
+        The method adds gates from a predefined set randomly, potentially with entanglement,
+        until the number of gates exceeds the number of qubits in the circuit.
+
+        Args:
+            circuit (Circuit): The circuit to which quantum gates will be added.
+
+        Returns:
+            Circuit: The modified circuit with randomly added gates.
+        """
         stop_add_gate = False
         true_false_choice_list = [True, False]
         num_qubits = circuit.num_qubits
