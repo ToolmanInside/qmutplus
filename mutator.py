@@ -417,6 +417,15 @@ class AllHadmard(object):
         self.circuit = None
 
     def generate_circuit(self, old_circuit):
+        """
+        Generates a new quantum circuit by applying a Hadamard gate to each qubit in the input circuit.
+
+        Parameters:
+            old_circuit (Circuit): The input quantum circuit.
+
+        Returns:
+            Circuit: The new circuit with Hadamard gates applied to each qubit.
+        """
         new_circuit = deepcopy(old_circuit)
         for i in range(new_circuit.num_qubits):
             new_circuit.add_gate(i, H_Gate())
