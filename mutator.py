@@ -284,11 +284,24 @@ class UCNOTMutator2(object):
         self.circuit = None
 
     def random_tf_machine(self):
+        """
+        Randomly selects and returns a boolean value.
+
+        Returns:
+            bool: A randomly chosen True or False value.
+        """
         if random.randint(0,1) == 0:
             return False
         return True
 
     def uu_gate(self, idx, circuit):
+        """
+        Adds a U gate with scaled random parameters to the quantum circuit at the specified index.
+
+        Parameters:
+            idx (int): The index of the qubit where the U gate will be added.
+            circuit (Circuit): The quantum circuit to which the U gate will be added.
+        """
         theta, fi, lamb = UU_Cal()
         theta = theta / 100
         fi = fi / 80
@@ -296,6 +309,16 @@ class UCNOTMutator2(object):
         circuit.add_u_gate(idx, (theta, fi, lamb))
 
     def uu_cnot_uu(self, idx_1, idx_2, circuit):
+        """
+        Adds a sequence of U gates and a CNOT gate to the quantum circuit.
+        This sequence consists of applying U gates to both qubits followed by a CNOT gate from
+        the second qubit to the first, and then two more U gates.
+
+        Parameters:
+            idx_1 (int): The index of the control qubit for the CNOT gate.
+            idx_2 (int): The index of the target qubit for the CNOT gate.
+            circuit (Circuit): The quantum circuit to which the gates will be added.
+        """
         u1 = (UU_Cal())
         u2 = (UU_Cal())
         u3 = (UU_Cal())
@@ -308,6 +331,16 @@ class UCNOTMutator2(object):
         circuit.fill_with_empty_gate()
     
     def uu_notc_uu(self, idx_1, idx_2, circuit):
+        """
+        Adds a sequence of U gates and a CNOT gate to the quantum circuit.
+        This sequence consists of applying U gates to both qubits followed by a CNOT gate from
+        the first qubit to the second, and then two more U gates.
+
+        Parameters:
+            idx_1 (int): The index of the control qubit for the CNOT gate.
+            idx_2 (int): The index of the target qubit for the CNOT gate.
+            circuit (Circuit): The quantum circuit to which the gates will be added.
+        """
         u1 = (UU_Cal())
         u2 = (UU_Cal())
         u3 = (UU_Cal())
@@ -320,6 +353,15 @@ class UCNOTMutator2(object):
         circuit.fill_with_empty_gate()
 
     def generate_u_gate_list(self, num_qubits):
+        """
+        Generates lists of indices for U gates and UCNOT gates based on the number of qubits.
+
+        Parameters:
+            num_qubits (int): The number of qubits in the circuit.
+
+        Returns:
+            tuple: A pair of lists, one for the indices of U gates and one for the indices of UCNOT gates.
+        """
         if num_qubits == 1:
             num_u_gates = 1
             num_ucnot_gates = 0
@@ -342,6 +384,15 @@ class UCNOTMutator2(object):
         return u_idx_list, uucnot_idx_list
 
     def generate_circuit(self, old_circuit):
+        """
+        Generates a new quantum circuit by adding U gates and UCNOT gate sequences to the input circuit.
+
+        Parameters:
+            old_circuit (Circuit): The input quantum circuit.
+
+        Returns:
+            Circuit: The new circuit with U gates and UCNOT gate sequences added.
+        """
         new_circuit = deepcopy(old_circuit)
         num_qubits = new_circuit.num_qubits
         u_idx_list, uucnot_idx_list = self.generate_u_gate_list(num_qubits)
