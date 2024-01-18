@@ -13,6 +13,17 @@ from copy import deepcopy
 import random
 
 def gen_bin_dict(num_qubits):
+    """
+    Generate a dictionary with binary string keys representing all possible states for a given number of qubits.
+
+    Each key is a binary representation of a quantum state, and all values are initialized to 0.0, signifying the initial state probability.
+
+    Parameters:
+    num_qubits (int): The number of qubits for which the state combinations are to be generated.
+
+    Returns:
+    dict: A dictionary where the keys are binary strings of length `num_qubits` and the values are floats, all initialized to 0.0.
+    """
     # get binary dict object here
     output_list = list()
     output_list.append("0" * num_qubits)
@@ -30,6 +41,14 @@ def gen_bin_dict(num_qubits):
     return output_dict
 
 class H_Gate(object):
+    """
+    Represents the Hadamard gate in quantum computing, creating superposition states.
+    
+    Attributes:
+        type (Type[H_Gate]): The type of the gate object, self-referencing the H_Gate class.
+        has_entangle (bool): Indicates if the gate can be part of an entanglement operation (True for H_Gate).
+        has_parameter (bool): Indicates if the gate requires a parameter (False for H_Gate).
+    """
     def __init__(self):
         self.type = H_Gate
         self.has_entangle = True
@@ -45,6 +64,14 @@ class H_Gate(object):
         return "|H |"
 
 class X_Gate(object):
+    """
+    Represents a Pauli-X gate in quantum computing, which flips the state of a qubit from |0> to |1> or vice versa.
+    
+    Attributes:
+        type (Type[X_Gate]): The type of the gate object, self-referencing the X_Gate class.
+        has_entangle (bool): Indicates if the gate can be part of an entanglement operation (False for X_Gate).
+        has_parameter (bool): Indicates if the gate requires a parameter (False for X_Gate).
+    """
     def __init__(self):
         self.type = X_Gate
         self.has_entangle = False
@@ -57,6 +84,14 @@ class X_Gate(object):
         return "|X |"
 
 class T_Gate(object):
+    """
+    Represents a T gate in quantum computing, which applies a pi/4 phase shift to a qubit.
+
+    Attributes:
+        type (Type[T_Gate]): The type of the gate object, self-referencing the T_Gate class.
+        has_entangle (bool): Indicates if the gate can be part of an entanglement operation (False for T_Gate).
+        has_parameter (bool): Indicates if the gate requires a parameter (False for T_Gate).
+    """
     def __init__(self):
         self.type = T_Gate
         self.has_entangle = False
@@ -248,7 +283,13 @@ class Classical_Line(object):
         return ""
 
 class Line(object):
-    # object of a single qubit line, recording gates and transitions
+    """
+    Represents a single qubit line in a quantum circuit, keeping track of gates and their order.
+    
+    Attributes:
+        route (list): Stores the sequence of gates applied to the qubit.
+        initial_value (int): Represents the initial state of the qubit, initialized to 0.
+    """
     def __init__(self):
         self.route = list()
         self.initial_value = 0
