@@ -64,6 +64,14 @@ class H_Gate(object):
         return "|H |"
 
 class X_Gate(object):
+    """
+    Represents a Pauli-X gate in quantum computing, which flips the state of a qubit from |0> to |1> or vice versa.
+    
+    Attributes:
+        type (Type[X_Gate]): The type of the gate object, self-referencing the X_Gate class.
+        has_entangle (bool): Indicates if the gate can be part of an entanglement operation (False for X_Gate).
+        has_parameter (bool): Indicates if the gate requires a parameter (False for X_Gate).
+    """
     def __init__(self):
         self.type = X_Gate
         self.has_entangle = False
