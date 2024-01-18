@@ -19,10 +19,28 @@ class QFTMutator(object):
         self.with_amplitude_amplification = False
 
     def inverse_QFT(self, num_qs):
+        """
+        Creates an inverse Quantum Fourier Transform (QFT) circuit for a given number of qubits.
+        
+        Args:
+            num_qs (int): The number of qubits for the QFT.
+        
+        Returns:
+            QuantumCircuit: An inverse QFT circuit.
+        """
         qft = QFT(num_qubits = num_qs, approximation_degree = 0, do_swaps = True, inverse = True, insert_barriers = True, name = "qft")
         return qft
 
     def add_amplitude_amplification(self, circuit):
+        """
+        Adds amplitude amplification gates to the given quantum circuit.
+
+        This process is used to increase the probability of desirable quantum states
+        in a quantum algorithm.
+
+        Args:
+            circuit (Circuit): The quantum circuit to which the amplitude amplification gates will be added.
+        """
         for i in range(circuit.num_qubits):
             circuit.add_gate(i, H_Gate())
         for i in range(circuit.num_qubits):
@@ -39,6 +57,16 @@ class QFTMutator(object):
             circuit.add_gate(i, H_Gate())
 
     def generate_circuit(self, circuit):
+        """
+        Generates a new quantum circuit by applying an inverse QFT and optionally
+        amplitude amplification to the input circuit.
+
+        Args:
+            circuit (Circuit): The input quantum circuit.
+
+        Returns:
+            Circuit: The new circuit with applied transformations.
+        """
         num_qubits = circuit.num_qubits
         qft = self.inverse_QFT(num_qubits)
         new_circuit = deepcopy(circuit)
