@@ -206,13 +206,10 @@ class UCNOTMutator(object):
         return u_idx_list, uucnot_idx_list
 
     def generate_circuit(self, old_circuit):
-            def generate_circuit(self, old_circuit):
         """
         Generate a new quantum circuit by adding U gates and controlled NOT (CNOT) gates.
 
-        This method takes an existing circuit and appends a combination of U and CNOT gates in a pattern
-determined by the random_tf_machine. The U gates are single qubit rotations while the CNOT gates
-are controlled by one qubit and target another, introducing entanglement between them.
+        This method takes an existing circuit and appends a combination of U and CNOT gates in a pattern determined by the random_tf_machine. The U gates are single qubit rotations while the CNOT gates are controlled by one qubit and target another, introducing entanglement between them.
 
         Args:
             old_circuit (Circuit): The existing circuit to which new gates are to be added.
