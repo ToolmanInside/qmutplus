@@ -41,6 +41,14 @@ def gen_bin_dict(num_qubits):
     return output_dict
 
 class H_Gate(object):
+    """
+    Represents the Hadamard gate in quantum computing, creating superposition states.
+    
+    Attributes:
+        type (Type[H_Gate]): The type of the gate object, self-referencing the H_Gate class.
+        has_entangle (bool): Indicates if the gate can be part of an entanglement operation (True for H_Gate).
+        has_parameter (bool): Indicates if the gate requires a parameter (False for H_Gate).
+    """
     def __init__(self):
         self.type = H_Gate
         self.has_entangle = True
