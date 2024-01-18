@@ -283,7 +283,13 @@ class Classical_Line(object):
         return ""
 
 class Line(object):
-    # object of a single qubit line, recording gates and transitions
+    """
+    Represents a single qubit line in a quantum circuit, keeping track of gates and their order.
+    
+    Attributes:
+        route (list): Stores the sequence of gates applied to the qubit.
+        initial_value (int): Represents the initial state of the qubit, initialized to 0.
+    """
     def __init__(self):
         self.route = list()
         self.initial_value = 0
