@@ -84,6 +84,14 @@ class X_Gate(object):
         return "|X |"
 
 class T_Gate(object):
+    """
+    Represents a T gate in quantum computing, which applies a pi/4 phase shift to a qubit.
+
+    Attributes:
+        type (Type[T_Gate]): The type of the gate object, self-referencing the T_Gate class.
+        has_entangle (bool): Indicates if the gate can be part of an entanglement operation (False for T_Gate).
+        has_parameter (bool): Indicates if the gate requires a parameter (False for T_Gate).
+    """
     def __init__(self):
         self.type = T_Gate
         self.has_entangle = False
