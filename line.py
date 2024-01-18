@@ -13,6 +13,7 @@ from copy import deepcopy
 import random
 
 def gen_bin_dict(num_qubits):
+    # get binary dict object here
     output_list = list()
     output_list.append("0" * num_qubits)
     for i in range(1, pow(2, num_qubits)):
